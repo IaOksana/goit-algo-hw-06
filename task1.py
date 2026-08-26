@@ -16,6 +16,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from graph_utils import create_graph
 
+# Run the main operation.
 def main():
     # Create the graph
     graph = create_graph()
