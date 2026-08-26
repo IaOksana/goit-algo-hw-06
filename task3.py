@@ -6,6 +6,7 @@
 
 from graph_utils import create_graph
 
+# Traverse the dijkstra operation.
 def dijkstra(graph, start_node):
     """Finds the shortest paths from a start node to all other nodes using Dijkstra's algorithm."""
     distances = {node: float('inf') for node in graph.nodes}
@@ -35,6 +36,7 @@ def dijkstra(graph, start_node):
     return distances, paths
 
 
+# Run the main operation.
 def main():
 
     # Create the graph
