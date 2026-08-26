@@ -11,6 +11,7 @@ is explained. The reasons why the algorithms have chosen such paths are explaine
 import networkx as nx
 from graph_utils import create_graph
 
+# Handle the generate readme dfs bfs operation.
 def generate_readme_dfs_bfs(dfs_path_result, bfs_path_result):
     """Генерує readme.md файл з результатами порівняння DFS та BFS."""
 
@@ -57,6 +58,7 @@ DFS (Depth-First Search) та BFS (Breadth-First Search) - це два фунд�
 
     print("Файл readme.md створено.")
 
+# Traverse the dfs path operation.
 def dfs_path(graph, start_node, end_node):
     """Finds a path between two nodes using Depth-First Search (DFS)."""
     visited = set()
@@ -71,6 +73,7 @@ def dfs_path(graph, start_node, end_node):
                 stack.append((neighbor, path + [neighbor]))
     return None
 
+# Traverse the bfs path operation.
 def bfs_path(graph, start_node, end_node):
     """Finds a path between two nodes using Breadth-First Search (BFS)."""
     visited = set()
@@ -85,6 +88,7 @@ def bfs_path(graph, start_node, end_node):
                  queue.append((neighbor, path + [neighbor]))
     return None
 
+# Run the main operation.
 def main():
     # Create the graph
     graph = create_graph()
