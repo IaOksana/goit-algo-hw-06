@@ -1,5 +1,6 @@
 import networkx as nx
 
+# Handle the create graph operation.
 def create_graph():
     # # Define the nodes (people in the social network)
     # nodes = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank']
